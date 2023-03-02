@@ -6,7 +6,7 @@
       <RouterLink :to="{ name: 'home' }">
         <div class="logo-wrapper">
           <img class="logo" :src="logo"/>
-          <p class="">The Panda Weather</p>
+          <p class="">OT-WEATHER-APP</p>
         </div>
       </RouterLink>
 
@@ -71,7 +71,7 @@ const toggleModal = () => {
 }
 .logo-wrapper {
   display: flex;
-  gap:5px;
+  gap:10px;
   align-items: center;
 }
 .nav {

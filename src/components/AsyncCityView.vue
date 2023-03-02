@@ -72,10 +72,6 @@
               :src="`http://openweathermap.org/img/wn/${hourData.weather[0].icon}@2x.png`"
               alt=""
             />
-            <div
-              :style="{ height: Math.round(hourData.temp / 2) + 'px' }"
-              class="graph"
-            ></div>
             <p class="hourly_temp">
               {{ Math.round(hourData.temp / 33.8) }}&deg;
             </p>
@@ -123,7 +119,7 @@
       </div>
     </div>
 
-    <div class="my-10" @click="removeCity">
+    <div class="remove-btn my-10" @click="removeCity">
       <p>Remove City</p>
     </div>
   </div>
@@ -170,6 +166,14 @@ const removeCity = () => {
 };
 </script>
 <style scoped>
+.remove-btn {
+  cursor: pointer;
+  padding: 5px;
+}
+.remove-btn:hover {
+  border: solid 1px white;
+  border-radius:5px;
+}
 .my-10 {
   margin: 10px 0;
 }

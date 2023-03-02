@@ -116,5 +116,6 @@ const getSearchResults = () => {
 }
 .search-list__item {
   padding: 5px;
+  cursor: pointer;
 }
 </style>
